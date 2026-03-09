@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { getImages, getVideos } from '../data/imageLinks';
+import DevelopedBy from '../components/DevelopedBy';
 
 const PhotoVideoGallery = () => {
   // Gallery component for displaying images and videos
@@ -170,6 +171,8 @@ const PhotoVideoGallery = () => {
         <div className="absolute bottom-40 left-20 w-40 h-40 bg-blue-100/30 rounded-full blur-2xl"></div>
         <div className="absolute bottom-20 right-10 w-28 h-28 bg-blue-200/20 rounded-full blur-2xl"></div>
       </div>
+      
+      <DevelopedBy />
     </div>
   );
 };

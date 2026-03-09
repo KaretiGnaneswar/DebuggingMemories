@@ -45,7 +45,7 @@ const HomePage = () => {
           </div>
 
           {/* Title */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-rich-gold mb-4 sm:mb-6 leading-tight">
             DebuggingMemories
           </h1>
 
