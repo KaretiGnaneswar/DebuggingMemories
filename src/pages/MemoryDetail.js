@@ -40,7 +40,7 @@ const MemoryDetail = ({ memories }) => {
     <div className="max-w-4xl mx-auto px-4 sm:px-6 py-4 sm:py-6 animate-fade-in">
       <button
         onClick={() => navigate(-1)}
-        className="flex items-center space-x-2 text-white hover:text-vibrant-yellow transition-colors duration-200 mb-4 sm:mb-6"
+        className="flex items-center space-x-2 text-white hover:text-vibrant-yellow active:text-vibrant-yellow/80 transition-colors duration-200 mb-4 sm:mb-6 transform active:scale-95"
       >
         <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5" />
         <span className="text-sm sm:text-base">Back</span>
@@ -92,13 +92,13 @@ const MemoryDetail = ({ memories }) => {
             <div className="flex space-x-2">
               <button
                 onClick={shareMemory}
-                className="p-2 sm:p-3 bg-vibrant-purple text-white rounded-full hover:bg-vibrant-blue transition-colors duration-200"
+                className="p-2 sm:p-3 bg-vibrant-purple text-white rounded-full hover:bg-vibrant-blue active:bg-vibrant-blue/80 transition-colors duration-200 transform hover:scale-105 active:scale-95"
                 title="Share memory"
               >
                 <Share2 className="w-4 h-4 sm:w-5 sm:h-5" />
               </button>
               <button
-                className="p-2 sm:p-3 bg-vibrant-pink text-white rounded-full hover:bg-vibrant-red transition-colors duration-200"
+                className="p-2 sm:p-3 bg-vibrant-pink text-white rounded-full hover:bg-vibrant-red active:bg-vibrant-red/80 transition-colors duration-200 transform hover:scale-105 active:scale-95"
                 title="Like memory"
               >
                 <Heart className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -163,7 +163,7 @@ const MemoryDetail = ({ memories }) => {
       <div className="mt-8 sm:mt-12">
         <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">More Memories</h3>
         <div className="text-center py-6 sm:py-8">
-          <Link to="/" className="vibrant-button inline-block text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">
+          <Link to="/" className="vibrant-button inline-block text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3 transform hover:scale-105 active:scale-95 transition-all duration-200">
             View All Memories
           </Link>
         </div>

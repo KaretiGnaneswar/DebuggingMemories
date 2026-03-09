@@ -126,7 +126,7 @@ const MemoryGallery = () => {
                   <Link 
                     key={index}
                     to={`/memory/${index + 1}`}
-                    className="block transform hover:scale-105 transition-all duration-500 animate-fade-in-up"
+                    className="block transform hover:scale-105 active:scale-95 transition-all duration-300 animate-fade-in-up cursor-pointer"
                     style={{animationDelay: `${index * 0.2}s`}}
                   >
                     <div className="relative w-40 h-32 sm:w-48 sm:h-36 md:w-64 md:h-48 lg:w-72 lg:h-52 xl:w-80 xl:h-60 rounded-xl sm:rounded-2xl md:rounded-3xl overflow-hidden shadow-lg sm:shadow-xl md:shadow-2xl group">
@@ -134,17 +134,17 @@ const MemoryGallery = () => {
                       <img 
                         src={image} 
                         alt={`Memory ${index + 1}`}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-active:scale-105"
                       />
                       
                       {/* Enhanced Overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-blue-900/40 to-transparent transition-opacity duration-300 group-hover:from-blue-900/90"></div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-blue-900/40 to-transparent transition-opacity duration-300 group-hover:from-blue-900/90 group-active:from-blue-900/95"></div>
                       
                       {/* Decorative Border */}
-                      <div className="absolute inset-0 border border-blue-400/30 rounded-xl sm:rounded-2xl md:rounded-3xl transition-all duration-300 group-hover:border-blue-400/60"></div>
+                      <div className="absolute inset-0 border border-blue-400/30 rounded-xl sm:rounded-2xl md:rounded-3xl transition-all duration-300 group-hover:border-blue-400/60 group-active:border-blue-400/80"></div>
                       
                       {/* Responsive Content */}
-                      <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-3 md:p-4 lg:p-6 transform transition-transform duration-300 group-hover:translate-y-1">
+                      <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-3 md:p-4 lg:p-6 transform transition-transform duration-300 group-hover:translate-y-1 group-active:translate-y-0.5">
                         <h3 className="text-white font-bold text-xs sm:text-sm md:text-base lg:text-xl mb-1 sm:mb-2 animate-fade-in-up">
                           Memory {index + 1}
                         </h3>

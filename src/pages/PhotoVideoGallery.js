@@ -130,7 +130,7 @@ const PhotoVideoGallery = () => {
               <Link 
                 key={index}
                 to={`/memory/${index + 1}`}
-                className="transform hover:scale-105 transition-all duration-300"
+                className="transform hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer"
                 style={{animationDelay: `${index * 0.1}s`}}
               >
                 <div className="relative w-full h-40 sm:h-48 lg:h-52 rounded-2xl overflow-hidden shadow-xl group">
@@ -138,17 +138,17 @@ const PhotoVideoGallery = () => {
                   <img 
                     src={item} 
                     alt={`${activeTab} ${index + 1}`}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-active:scale-105"
                   />
                   
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-blue-900/40 to-transparent transition-opacity duration-300 group-hover:from-blue-900/90"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-blue-900/40 to-transparent transition-opacity duration-300 group-hover:from-blue-900/90 group-active:from-blue-900/95"></div>
                   
                   {/* Decorative Border */}
-                  <div className="absolute inset-0 border border-blue-400/30 rounded-2xl transition-all duration-300 group-hover:border-blue-400/60"></div>
+                  <div className="absolute inset-0 border border-blue-400/30 rounded-2xl transition-all duration-300 group-hover:border-blue-400/60 group-active:border-blue-400/80"></div>
                   
                   {/* Content */}
-                  <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 transform transition-transform duration-300 group-hover:translate-y-1">
+                  <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 transform transition-transform duration-300 group-hover:translate-y-1 group-active:translate-y-0.5">
                     <h3 className="text-white font-bold text-sm sm:text-lg mb-1">
                       {activeTab === 'photos' ? `Photo ${index + 1}` : `Video ${index + 1}`}
                     </h3>

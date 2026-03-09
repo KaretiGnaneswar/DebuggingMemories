@@ -59,7 +59,7 @@ const HomePage = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
             <Link 
               to="/gallery"
-              className="group premium-button text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 flex items-center space-x-2 sm:space-x-3 transform hover:scale-105 transition-all duration-300 shadow-2xl"
+              className="group premium-button text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 flex items-center space-x-2 sm:space-x-3 transform hover:scale-105 active:scale-95 transition-all duration-300 shadow-2xl sm:hover:scale-105 sm:active:scale-95"
             >
               <span>Let's Explore</span>
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-2 transition-transform duration-300" />
@@ -67,11 +67,11 @@ const HomePage = () => {
             </Link>
 
             <div className="flex items-center space-x-3 sm:space-x-4 text-rich-silver">
-              <div className="flex items-center space-x-1.5 sm:space-x-2">
+              <div className="flex items-center space-x-1.5 sm:space-x-2 transform active:scale-95 transition-transform duration-150">
                 <ImageIcon className="w-4 h-4 sm:w-5 sm:h-5" />
                 <span className="text-xs sm:text-sm">Beautiful Memories</span>
               </div>
-              <div className="flex items-center space-x-1.5 sm:space-x-2">
+              <div className="flex items-center space-x-1.5 sm:space-x-2 transform active:scale-95 transition-transform duration-150">
                 <Heart className="w-4 h-4 sm:w-5 sm:h-5" />
                 <span className="text-xs sm:text-sm">Forever Yours</span>
               </div>
@@ -80,24 +80,24 @@ const HomePage = () => {
 
           {/* Feature Highlights */}
           <div className="mt-12 sm:mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-3xl mx-auto">
-            <div className="text-center animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-rich-gold/20 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 backdrop-blur-sm border border-rich-gold/30">
+            <div className="text-center animate-fade-in-up transform hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer" style={{animationDelay: '0.2s'}}>
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-rich-gold/20 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 backdrop-blur-sm border border-rich-gold/30 hover:bg-rich-gold/30 active:bg-rich-gold/40 transition-colors duration-200">
                 <Camera className="w-6 h-6 sm:w-8 sm:h-8 text-rich-gold" />
               </div>
               <h3 className="premium-text font-semibold mb-2 text-sm sm:text-base">Capture</h3>
               <p className="text-rich-silver text-xs sm:text-sm">Save your special moments</p>
             </div>
 
-            <div className="text-center animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-rich-ruby/20 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 backdrop-blur-sm border border-rich-ruby/30">
+            <div className="text-center animate-fade-in-up transform hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer" style={{animationDelay: '0.4s'}}>
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-rich-ruby/20 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 backdrop-blur-sm border border-rich-ruby/30 hover:bg-rich-ruby/30 active:bg-rich-ruby/40 transition-colors duration-200">
                 <Heart className="w-6 h-6 sm:w-8 sm:h-8 text-rich-ruby" />
               </div>
               <h3 className="premium-text font-semibold mb-2 text-sm sm:text-base">Cherish</h3>
               <p className="text-rich-silver text-xs sm:text-sm">Keep memories close to heart</p>
             </div>
 
-            <div className="text-center animate-fade-in-up" style={{animationDelay: '0.6s'}}>
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-rich-royal/20 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 backdrop-blur-sm border border-rich-royal/30">
+            <div className="text-center animate-fade-in-up transform hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer" style={{animationDelay: '0.6s'}}>
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-rich-royal/20 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 backdrop-blur-sm border border-rich-royal/30 hover:bg-rich-royal/30 active:bg-rich-royal/40 transition-colors duration-200">
                 <Sparkles className="w-6 h-6 sm:w-8 sm:h-8 text-rich-royal" />
               </div>
               <h3 className="premium-text font-semibold mb-2 text-sm sm:text-base">Relive</h3>
