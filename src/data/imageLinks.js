@@ -12,11 +12,19 @@ export const getImages = () => [
   "https://res.cloudinary.com/dlrcuejfd/image/upload/v1773057535/IMG-20260215-WA0034_igeit9.jpg",
   "https://res.cloudinary.com/dlrcuejfd/image/upload/v1773056963/IMG_5258_lb955a.jpg",
   "https://res.cloudinary.com/dlrcuejfd/image/upload/v1773060783/20260126_205818_jhuiqa.jpg",
-  "https://res.cloudinary.com/dlrcuejfd/image/upload/v1773060783/IMG-20260121-WA0008_kmpby6.jpg"
+  "https://res.cloudinary.com/dlrcuejfd/image/upload/v1773060783/IMG-20260121-WA0008_kmpby6.jpg",
+  "https://res.cloudinary.com/dlrcuejfd/image/upload/v1773081930/PXL_20251224_132229579.MP_bj0tea.jpg",
+  "https://res.cloudinary.com/dlrcuejfd/image/upload/v1773081928/InShot_20260216_093545736_ohnqsf.jpg",
+  "https://res.cloudinary.com/dlrcuejfd/image/upload/v1773081927/IMG_5423_uoukbm.jpg",
+  "https://res.cloudinary.com/dlrcuejfd/image/upload/v1773081924/IMG_4955_fxsrkx.jpg",
+  "https://res.cloudinary.com/dlrcuejfd/image/upload/v1773081920/20260204_105229_uum5jn.jpg",
+  "https://res.cloudinary.com/dlrcuejfd/image/upload/v1773081922/IMG_20260209_222430_tarox2.jpg"
 ];
 
-// Get videos (currently empty - can add direct video URLs here later)
-export const getVideos = () => [];
+// Get videos from direct Cloudinary URLs
+export const getVideos = () => [
+  "https://res.cloudinary.com/dlrcuejfd/video/upload/v1773081386/IMG_5003_unlgwi.mov"
+];
 
 // Fallback static links (same as main images for consistency)
 export const getStaticImages = () => [

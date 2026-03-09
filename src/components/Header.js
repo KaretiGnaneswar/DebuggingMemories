@@ -42,6 +42,12 @@ const Header = () => {
           >
             Gallery
           </Link>
+          <Link 
+            to="/team" 
+            className="premium-text hover:text-rich-gold transition-all duration-200 font-medium transform hover:scale-110 hover:rotate-1"
+          >
+            Homies
+          </Link>
         </nav>
 
         {/* Mobile Hamburger Button */}
@@ -60,7 +66,7 @@ const Header = () => {
 
       {/* Mobile Navigation Menu */}
       <div className={`sm:hidden transition-all duration-300 ease-in-out overflow-hidden ${
-        isMenuOpen ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
+        isMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
       }`}>
         <nav className="pt-4 pb-2 border-t border-rich-gold/20 mt-4">
           <Link 
@@ -76,6 +82,13 @@ const Header = () => {
             onClick={closeMenu}
           >
             Gallery
+          </Link>
+          <Link 
+            to="/team" 
+            className="block py-3 px-4 premium-text hover:text-rich-gold hover:bg-white/10 transition-all duration-200 font-medium rounded-lg transform active:scale-95 mt-2"
+            onClick={closeMenu}
+          >
+            Homies
           </Link>
           <Link 
             to="/" 

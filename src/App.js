@@ -5,6 +5,8 @@ import HomePage from './pages/HomePage';
 import MemoryGallery from './pages/MemoryGallery';
 import PhotoVideoGallery from './pages/PhotoVideoGallery';
 import MemoryDetail from './pages/MemoryDetail';
+import Team from './pages/Team';
+import TeamMember from './pages/TeamMember';
 import { getImages, getStaticImages } from './data/imageLinks';
 import './index.css';
 
@@ -134,6 +136,28 @@ function App() {
                 <Header />
                 <main className="container mx-auto px-4 py-8 relative z-10">
                   <MemoryDetail memories={memories} />
+                </main>
+              </>
+            } 
+          />
+          <Route 
+            path="/team" 
+            element={
+              <>
+                <Header />
+                <main className="relative z-10">
+                  <Team />
+                </main>
+              </>
+            } 
+          />
+          <Route 
+            path="/team/:id" 
+            element={
+              <>
+                <Header />
+                <main className="container mx-auto px-4 py-8 relative z-10">
+                  <TeamMember />
                 </main>
               </>
             } 
