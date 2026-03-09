@@ -1,12 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Heart, Camera, Sparkles, ImageIcon } from 'lucide-react';
+import Header from '../components/Header';
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Premium Background */}
-      <div className="absolute inset-0 z-0">
+    <div className="min-h-screen flex flex-col relative overflow-hidden">
+      <Header />
+      
+      {/* Main Content */}
+      <div className="flex-1 flex items-center justify-center relative">
+        {/* Premium Background */}
+        <div className="absolute inset-0 z-0">
         <img 
           src="https://i0.wp.com/officechai.com/wp-content/uploads/2015/08/infosys-mysore-library.jpg?w=1024&ssl=1"
           alt="Memories Background"
@@ -113,6 +118,7 @@ const HomePage = () => {
             <div className="w-0.5 h-2 sm:w-1 sm:h-3 bg-rich-gold rounded-full mt-1 sm:mt-2 animate-pulse"></div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
