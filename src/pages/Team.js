@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { teamMembers } from '../data/profileDummy';
-import { Github, Linkedin, Twitter, Instagram, Mail, ExternalLink } from 'lucide-react';
+import { Github, Linkedin, Instagram, ExternalLink } from 'lucide-react';
 
 const Team = () => {
   return (
