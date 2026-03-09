@@ -24,6 +24,7 @@ export const MusicProvider = ({ children }) => {
   const currentSong = songs[currentSongIndex];
 
   // Auto-play functionality (only once when first loading)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (audioRef.current && songs.length > 0 && !isPlaying) {
       // Auto-play after a short delay to ensure page load

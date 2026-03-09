@@ -6,7 +6,6 @@ import MemoryGallery from './pages/MemoryGallery';
 import PhotoVideoGallery from './pages/PhotoVideoGallery';
 import MemoryDetail from './pages/MemoryDetail';
 import { getImages, getStaticImages } from './data/imageLinks';
-import { MusicProvider } from './contexts/MusicContext';
 import './index.css';
 
 function App() {

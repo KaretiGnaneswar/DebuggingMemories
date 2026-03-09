@@ -185,7 +185,7 @@ const MemoryGallery = () => {
       </div>
       
       {/* Music Player */}
-      <MusicPlayer songs={songs} autoPlay={true} initiallyHidden={true} />
+      <MusicPlayer />
     </div>
   );
 };
