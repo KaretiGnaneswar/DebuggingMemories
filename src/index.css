@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-rich-black min-h-screen;
+  }
+  
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .memory-card {
+    @apply bg-rich-pearl rounded-2xl shadow-2xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-rich-gold/20;
+    animation: fade-in-up 0.6s ease-out;
+    animation-fill-mode: both;
+  }
+  
+  .memory-card:nth-child(1) { animation-delay: 0.1s; }
+  .memory-card:nth-child(2) { animation-delay: 0.2s; }
+  .memory-card:nth-child(3) { animation-delay: 0.3s; }
+  .memory-card:nth-child(4) { animation-delay: 0.4s; }
+  .memory-card:nth-child(5) { animation-delay: 0.5s; }
+  .memory-card:nth-child(6) { animation-delay: 0.6s; }
+  .memory-card:nth-child(7) { animation-delay: 0.7s; }
+  .memory-card:nth-child(8) { animation-delay: 0.8s; }
+  
+  .premium-button {
+    @apply bg-rich-gold text-rich-black font-bold py-3 px-8 rounded-lg hover:bg-rich-amber transform hover:scale-105 transition-all duration-200 relative overflow-hidden shadow-lg;
+  }
+  
+  .premium-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+  }
+  
+  .premium-button:hover::before {
+    left: 100%;
+  }
+  
+  .glass-effect {
+    @apply bg-rich-dark/80 backdrop-blur-md border border-rich-gold/30;
+    animation: scale-in 0.5s ease-out;
+  }
+  
+  .animate-fade-in {
+    animation: fade-in-up 0.8s ease-out;
+  }
+  
+  .shimmer-loading {
+    @apply relative overflow-hidden;
+  }
+  
+  .shimmer-loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(212,175,55,0.3), transparent);
+    animation: shimmer 2s infinite;
+  }
+  
+  .floating-hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .heart-particle {
+    position: absolute;
+    color: rgba(224, 17, 95, 0.4);
+    animation: float-up 8s linear infinite;
+  }
+  
+  .hero-background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  
+  .hero-background::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, 
+      rgba(10, 10, 10, 0.95) 0%, 
+      rgba(26, 26, 26, 0.95) 50%, 
+      rgba(45, 45, 45, 0.95) 100%);
+  }
+  
+  .premium-text {
+    @apply text-rich-platinum;
+  }
+  
+  .premium-accent {
+    @apply text-rich-gold;
+  }
+  
+  @keyframes float-up {
+    0% {
+      transform: translateY(100vh) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes parallax-float {
+    0%, 100% {
+      transform: translateY(0px) translateX(0px);
+    }
+    25% {
+      transform: translateY(-20px) translateX(10px);
+    }
+    50% {
+      transform: translateY(10px) translateX(-10px);
+    }
+    75% {
+      transform: translateY(-10px) translateX(20px);
+    }
+  }
+  
+  .hero-parallax {
+    animation: parallax-float 6s ease-in-out infinite;
+  }
+}
+
