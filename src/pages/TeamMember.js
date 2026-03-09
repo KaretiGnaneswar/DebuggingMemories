@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Mail, Github, Linkedin, Twitter, Instagram, ExternalLink } from 'lucide-react';
 import { teamMembers } from '../data/profileDummy';
+import DevelopedBy from '../components/DevelopedBy';
 
 const TeamMember = () => {
   const { id } = useParams();
@@ -146,6 +147,7 @@ const TeamMember = () => {
           </div>
         </div>
       </div>
+      <DevelopedBy />
     </div>
   );
 };

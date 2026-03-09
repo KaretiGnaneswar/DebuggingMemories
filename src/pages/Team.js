@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { teamMembers } from '../data/profileDummy';
 import { Github, Linkedin, Instagram, ExternalLink } from 'lucide-react';
+import DevelopedBy from '../components/DevelopedBy';
 
 const Team = () => {
   return (
@@ -117,6 +118,7 @@ const Team = () => {
       <div className="text-center text-xs sm:text-sm text-gray-500">
         <p>Click on any team member to view their detailed profile</p>
       </div>
+      <DevelopedBy />
     </div>
   );
 };

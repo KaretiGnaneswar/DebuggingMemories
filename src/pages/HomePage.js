@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Heart, Camera, Sparkles, ImageIcon } from 'lucide-react';
 import Header from '../components/Header';
+import DevelopedBy from '../components/DevelopedBy';
 
 const HomePage = () => {
   return (
@@ -120,6 +121,7 @@ const HomePage = () => {
         </div>
       </div>
       </div>
+      <DevelopedBy />
     </div>
   );
 };
