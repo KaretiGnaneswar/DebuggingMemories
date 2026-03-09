@@ -1,7 +1,6 @@
 import React from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, Users, Tag, Share2, Heart } from 'lucide-react';
-import MusicPlayer from '../components/MusicPlayer';
 
 const MemoryDetail = ({ memories }) => {
   const { id } = useParams();
@@ -169,9 +168,6 @@ const MemoryDetail = ({ memories }) => {
           </Link>
         </div>
       </div>
-      
-      {/* Music Player */}
-      <MusicPlayer />
     </div>
   );
 };

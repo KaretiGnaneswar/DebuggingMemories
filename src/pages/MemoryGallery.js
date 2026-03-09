@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Heart, Camera, Sparkles, Star } from 'lucide-react';
 import { getImages, getStaticImages } from '../data/imageLinks';
-import MusicPlayer from '../components/MusicPlayer';
 
 const MemoryGallery = () => {
   const scrollContainerRef = useRef(null);
@@ -183,9 +182,6 @@ const MemoryGallery = () => {
           </div>
         </div>
       </div>
-      
-      {/* Music Player */}
-      <MusicPlayer />
     </div>
   );
 };

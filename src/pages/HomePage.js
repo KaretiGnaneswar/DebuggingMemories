@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Heart, Camera, Sparkles, ImageIcon } from 'lucide-react';
-import MusicPlayer from '../components/MusicPlayer';
 
 const HomePage = () => {
   return (
@@ -115,9 +114,6 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      
-      {/* Music Player */}
-      <MusicPlayer />
     </div>
   );
 };
