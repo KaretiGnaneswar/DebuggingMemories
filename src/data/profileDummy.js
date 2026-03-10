@@ -129,8 +129,8 @@ email: "lisa@example.com"
 
 {
 id: 9,
-name: "Guna Varshimi",
-role: "Vibrant Varshimi",
+name: "Guna Varshini",
+role: "Vibrant Varshini",
 description: "Full of colorful ideas and spontaneous fun. Life is never boring when Varshimi is around.",
 avatar: "https://res.cloudinary.com/dlrcuejfd/image/upload/v1773081742/20260115_071010_s0peqx.jpg",
 social: {
